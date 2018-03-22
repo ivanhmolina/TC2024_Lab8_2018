@@ -1,0 +1,12 @@
+<ion-view title="Question 3" id="page3">
+  <ion-content padding="true" class="has-header">
+    <h3 id="question3-heading3" style="color:#000000;font-weight:300;">Add your comments</h3>
+    <form id="question3-form3" class="list">
+      <label class="item item-input" id="question3-textarea1">
+      	<textarea placeholder="Write here..." ng-model="mdl.question3"></textarea>
+      </label>
+    </form>
+    <h4>{{question1}} ,{{question2}} ,{{mdl.question3}}</h4>
+    <a ui-sref="question4({question1: question1, question2: question2, question3:mdl.question3})" id="question3-button3" class="button button-positive button-block">Submit</a>
+  </ion-content>
+</ion-view>

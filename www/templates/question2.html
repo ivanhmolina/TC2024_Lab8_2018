@@ -1,0 +1,13 @@
+<ion-view title="Question 2" id="page2">
+  <ion-content padding="true" class="has-header">
+    <h3 id="question2-heading2" style="color:#000000;font-weight:300;">The meal I ordered included</h3>
+    <form id="question2-form2" class="list">
+      <ion-checkbox id="question2-checkbox1" ng-model="mdl.question2[0]">Starter</ion-checkbox>
+      <ion-checkbox id="question2-checkbox2" ng-model="mdl.question2[1]">First course</ion-checkbox>
+      <ion-checkbox id="question2-checkbox3" ng-model="mdl.question2[2]">Main dish</ion-checkbox>
+      <ion-checkbox id="question2-checkbox4" ng-model="mdl.question2[3]">Dessert</ion-checkbox>
+    </form>
+    <h4>{{question1}} , {{mdl.question2}}</h4>
+    <a ui-sref="question3({question1: question1, question2: mdl.question2})" id="question2-button2" class="button button-positive button-block">Submit</a>
+  </ion-content>
+</ion-view>

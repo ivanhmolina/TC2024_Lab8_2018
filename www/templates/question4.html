@@ -1,0 +1,21 @@
+<ion-view title="Question 4" id="page4">
+  <ion-content padding="true" class="has-header">
+    <h3 id="question4-heading4" style="color:#000000;font-weight:300;">Let us now your name, email and phone number</h3>
+    <form id="question4-form5" class="list">
+      <label class="item item-input" id="question4-input1">
+        <span class="input-label">Name : </span>
+        <input type="text" placeholder="" ng-model="mdl.question4[0]">
+      </label>
+      <label class="item item-input" id="question4-input3">
+        <span class="input-label">Email :</span>
+        <input formControlName="email" type="email" placeholder="" ng-model="mdl.question4[1]">
+      </label>
+      <label class="item item-input" id="question4-input4">
+        <span class="input-label">Phone :</span>
+        <input type="tel" placeholder="" ng-model="mdl.question4[2]">
+      </label>
+    </form>
+    <h4>{{question1}} ,{{question2}} ,{{question3}} ,{{mdl.question4}}</h4>
+    <a ui-sref="answers({question1: question1, question2: question2, question3:question3, question4: mdl.question4})" id="question4-button4" class="button button-positive button-block">Submit</a>
+  </ion-content>
+</ion-view>
